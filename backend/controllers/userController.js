@@ -1,4 +1,4 @@
-const User = require("../models/userModel");
+const Users = require("../models/userModel");
 
 //Create Product
 exports.createUser = async(req, res, next)=>{
@@ -6,6 +6,8 @@ exports.createUser = async(req, res, next)=>{
     res.status(201).json({status:true, user})
 }
 
-exports.getAllUsers = (req,res) =>(
-    res.status(200).json({message:"Route is working fine"})
-)
+exports.getAllUsers = async(req,res) =>{
+
+    const users = await Users.find()
+    res.status(200).json({status:true, users})
+}

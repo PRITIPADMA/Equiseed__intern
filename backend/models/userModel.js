@@ -1,5 +1,10 @@
 const mongoose = require("mongoose");
-
+const eventSchema = mongoose.Schema({
+    username:{
+        type:String,
+        required:true,
+    }
+})
 const userSchema = mongoose.Schema({
     fname:{
         type:String,
@@ -21,6 +26,7 @@ const userSchema = mongoose.Schema({
         type:String,
         // required:[true, "Please enter a username"]
     },
+    // events:[eventSchema],
     createdAt:{
         type:Date,
         default:Date.now
