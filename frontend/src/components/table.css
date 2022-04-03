@@ -19,7 +19,7 @@
     cursor: pointer;
 }
 .table{
-    margin: 5% 5%;
+    margin: 5% 0.5%;
 }
 .content-table{
     border-collapse: collapse;
@@ -43,5 +43,9 @@
     background: rgb(148, 250, 120);
 }
 .action{
+    cursor: pointer;
+}
+#details{
+    background: rgb(209, 209, 209);
     cursor: pointer;
 }

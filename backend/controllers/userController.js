@@ -19,6 +19,10 @@ exports.getAllEvents = async (req, res) => {
   const events = await Events.find();
   res.status(200).json({ status: true, events });
 };
+exports.getEventDetails = async (req, res, next) => {
+  const event = await Events.findById(req.params.id);
+  res.status(200).json({ status: true, event });
+};
 
 // Update Event
 
