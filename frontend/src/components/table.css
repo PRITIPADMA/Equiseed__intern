@@ -4,9 +4,19 @@
 .header{
     text-align: center;
     font-size: 2rem;
-    margin-top: 10%;
+    margin-top: 5%;
     font-family: "Montserrat";
     font-weight: 600;
+}
+.get__details{
+    margin: auto;
+    text-align: center;
+    background: rgb(199, 199, 199);
+    width: fit-content;
+    margin-top: 2%;
+    padding: 1%;
+    border-radius: 10px;
+    cursor: pointer;
 }
 .table{
     margin: 5% 5%;
